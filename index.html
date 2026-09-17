@@ -187,7 +187,7 @@
   <div>© 2026 Masked Humanity. A personal fundraiser, not a registered organization.</div>
 </footer>
 
-<script>const TARGET=13314000;let raised=0;let selectedAmount=null;let selectedMethod=null;
+<script>const TARGET=13314000;let raised=140500;let selectedAmount=null;let selectedMethod=null;
 const NUMBERS={MTN:"0771022596",Airtel:"0744630652"};
 const money=n=>"UGX "+Math.max(0,Math.round(n)).toLocaleString("en-UG");
 function updateProgress(){const pct=Math.min(100,(raised/TARGET)*100);document.querySelector("#raised").textContent=money(raised);document.querySelector("#remaining").textContent=money(TARGET-raised);document.querySelector("#percent").textContent=(Math.round(pct*10)/10).toString().replace(".0","")+"%";document.querySelector("#progressBar").style.width=pct+"%";document.querySelector("#progressMessage").textContent=raised===0?"♥  Be the first to support the mission.":"♥  Thank you for helping move the mission forward."}
